@@ -11,7 +11,17 @@ Card YAML to show the predicted PV for the next 5 days. This card combination us
 
 Install Predbat here https://github.com/springfall2008/batpred
 
-Simply install all the above cards from HACS and provide the right entities from Predbat (likely defaults here work) in the code below:
+Simply install all the above cards from HACS and provide the right entities from Predbat (likely defaults here work) in the code below.
+
+Ensure to set your PV max daily PV for each bar card. I rarely get over 35kWh so I set that as the top value "100%" for each bar-card. E.g
+
+```
+      - type: custom:bar-card
+        max: 35
+        height: 100px
+```
+
+Here is the entire YAML blob you need to create the cards in the image above.
 
 ```
 - type: custom:config-template-card
