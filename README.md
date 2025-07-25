@@ -69,8 +69,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;          
               margin-top: 3px;
               height: calc(100% - 6px) !important;
-              --height: calc(100% - 3px) !important;
-              --background-color: black;
               {% set energy = (((states('sensor.predbat_pv_today') | float) / 35) + 0.08) * 100 -%}              
                 opacity: {{ energy }}%; 
               {%- if energy_raw < 15 -%}
@@ -83,7 +81,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
               margin-top: 3px;                   
-              --background-color: black;
             }
             bar-card-backgroundbar {
               border-radius: 7px !important;            
@@ -91,8 +88,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
               margin-top: 3px;   
-              --background-color: black;
-              --opacity: 100%;
             }
             bar-card-value {
               color: #FFFFFF;
@@ -110,7 +105,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               font-size: 10px;
             }   
             bar-card-name {
-              --font-weight: bold;
               color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
@@ -123,19 +117,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
               filter: brightness(1.0);  
               width: calc(100% - 6px) !important;        
               margin-left: 3px;
-              --border-radius: 7px;
-              --margin-top: 3px;
               height: 2px !important;
             }
             bar-card-targetbar {
-              --filter: brightness(0.39);
-              --opacity: 0%;
-              --background-color: black;
               width: calc(100% - 6px) !important;                        
-              --border-radius: 7px;
               margin-left: 3px;
-              --height: calc(100% - 6px) !important;
-              --margin-top: 3px;
             }
       - type: custom:bar-card
         max: 35
@@ -170,8 +156,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;          
               margin-top: 3px;
               height: calc(100% - 6px) !important;
-              --height: calc(100% - 3px) !important;
-              --background-color: black;
               {% set energy = (((states('sensor.predbat_pv_tomorrow') | float) / 35) + 0.08) * 100 -%}
                 opacity: {{ energy }}%; 
               {%- if energy_raw < 15 -%}
@@ -184,8 +168,7 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
-              margin-top: 3px;                   
-              --background-color: black;
+              margin-top: 3px;         
             }
 
             bar-card-backgroundbar {
@@ -194,8 +177,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
               margin-top: 3px;   
-              --background-color: black;
-              --opacity: 100%;
             }
 
             bar-card-value {
@@ -216,7 +197,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
             }   
 
             bar-card-name {
-              --font-weight: bold;
               color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
@@ -230,20 +210,12 @@ Here is the entire YAML blob you need to create the cards in the image above.
               filter: brightness(1.0);  
               width: calc(100% - 6px) !important;        
               margin-left: 3px;
-              --border-radius: 7px;
-              --margin-top: 3px;
               height: 2px !important;
             }
 
             bar-card-targetbar {
-              --filter: brightness(0.39);
-              --opacity: 0%;
-              --background-color: black;
               width: calc(100% - 6px) !important;                        
-              --border-radius: 7px;
               margin-left: 3px;
-              --height: calc(100% - 6px) !important;
-              --margin-top: 3px;
             }
       - type: custom:bar-card
         max: 35
@@ -275,8 +247,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px; 
               margin-top: 3px;
               height: calc(100% - 6px) !important;
-              --height: calc(100% - 3px) !important;
-              --background-color: black;
               {% set energy = (((states('sensor.predbat_pv_d2') | float) / 35) + 0.08) * 100 -%}
                 opacity: {{ energy }}%; 
               {%- if energy_raw < 15 -%}
@@ -288,17 +258,14 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
-              margin-top: 3px;                   
-              --background-color: black;            
+              margin-top: 3px;                              
             }
             bar-card-backgroundbar {
               border-radius: 7px !important;            
               margin-left: 3px;
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
-              margin-top: 3px;   
-              --background-color: black;
-              --opacity: 100%;              
+              margin-top: 3px;                
             }
             bar-card-value {
               color: #FFFFFF;
@@ -316,7 +283,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               font-size: 10px;
             }   
             bar-card-name {
-              --font-weight: bold;
               color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
@@ -329,19 +295,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
               filter: brightness(1.0);  
               width: calc(100% - 6px) !important;        
               margin-left: 3px;
-              --border-radius: 7px;
-              --margin-top: 3px;
               height: 2px !important;
             }
             bar-card-targetbar {
-              --filter: brightness(0.39);
-              --opacity: 0%;
-              --background-color: black;
               width: calc(100% - 6px) !important;                        
-              --border-radius: 7px;
               margin-left: 3px;
-              --height: calc(100% - 6px) !important;
-              --margin-top: 3px;
             }
       - type: custom:bar-card
         max: 35
@@ -376,8 +334,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;          
               margin-top: 3px;
               height: calc(100% - 6px) !important;
-              --height: calc(100% - 3px) !important;
-              --background-color: black;
               {% set energy = (((states('sensor.predbat_pv_d3') | float) / 35) + 0.08) * 100 -%}
                 opacity: {{ energy }}%; 
               {%- if energy_raw < 15 -%}
@@ -390,8 +346,7 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
-              margin-top: 3px;                   
-              --background-color: black;            
+              margin-top: 3px;                              
             }
 
             bar-card-backgroundbar {
@@ -399,9 +354,7 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
-              margin-top: 3px;   
-              --background-color: black;
-              --opacity: 100%;              
+              margin-top: 3px;                
             }
 
             bar-card-value {
@@ -422,7 +375,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
             }   
 
             bar-card-name {
-              --font-weight: bold;
               color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
@@ -436,20 +388,12 @@ Here is the entire YAML blob you need to create the cards in the image above.
               filter: brightness(1.0);  
               width: calc(100% - 6px) !important;        
               margin-left: 3px;
-              --border-radius: 7px;
-              --margin-top: 3px;
               height: 2px !important;
             }
 
             bar-card-targetbar {
-              --filter: brightness(0.39);
-              --opacity: 0%;
-              --background-color: black;
               width: calc(100% - 6px) !important;                        
-              --border-radius: 7px;
               margin-left: 3px;
-              --height: calc(100% - 6px) !important;
-              --margin-top: 3px;
             }
       - type: custom:bar-card
         max: 35
@@ -484,8 +428,6 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;          
               margin-top: 3px;
               height: calc(100% - 6px) !important;
-              --height: calc(100% - 3px) !important;
-              --background-color: black;
               {% set energy = (((states('sensor.predbat_pv_d4') | float) / 35) + 0.08) * 100 -%}
                 opacity: {{ energy }}%; 
               {%- if energy_raw < 15 -%}
@@ -498,8 +440,7 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
-              margin-top: 3px;                   
-              --background-color: black;            
+              margin-top: 3px;                             
             }
 
             bar-card-backgroundbar {
@@ -507,9 +448,7 @@ Here is the entire YAML blob you need to create the cards in the image above.
               margin-left: 3px;
               width: calc(100% - 6px) !important;
               height: calc(100% - 6px) !important;
-              margin-top: 3px;   
-              --background-color: black;
-              --opacity: 100%;              
+              margin-top: 3px;                
             }
 
             bar-card-value {
@@ -529,8 +468,7 @@ Here is the entire YAML blob you need to create the cards in the image above.
               font-size: 10px;
             }   
 
-            bar-card-name {
-              --font-weight: bold;             
+            bar-card-name {          
               color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
@@ -544,19 +482,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
               filter: brightness(1.0);  
               width: calc(100% - 6px) !important;        
               margin-left: 3px;
-              --border-radius: 7px;
-              --margin-top: 3px;
               height: 2px !important;
             }
 
             bar-card-targetbar {
-              --filter: brightness(0.39);
-              --opacity: 0%;
-              --background-color: black;
               width: calc(100% - 6px) !important;                        
-              --border-radius: 7px;
               margin-left: 3px;
-              --height: calc(100% - 6px) !important;
-              --margin-top: 3px;
             }
 ```
