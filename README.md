@@ -111,11 +111,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
             }   
             bar-card-name {
               --font-weight: bold;
-              color: black;
+              color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
               {%- endif %}                
-              text-shadow: 0px 1px 2px white;
+              text-shadow: 0px 1px 2px var(--card-background-color);
               font-size: 14px;
             }   
             bar-card-markerbar {
@@ -217,11 +217,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
 
             bar-card-name {
               --font-weight: bold;
-              color: black;
+              color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
               {%- endif %}                
-              text-shadow: 0px 1px 2px white;
+              text-shadow: 0px 1px 2px var(--card-background-color);
               font-size: 14px;
             }   
 
@@ -317,11 +317,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
             }   
             bar-card-name {
               --font-weight: bold;
-              color: black;
+              color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
               {%- endif %}                
-              text-shadow: 0px 1px 2px white;
+              text-shadow: 0px 1px 2px var(--card-background-color);
               font-size: 14px;
             }   
             bar-card-markerbar {
@@ -423,11 +423,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
 
             bar-card-name {
               --font-weight: bold;
-              color: black;
+              color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
               {%- endif %}                
-              text-shadow: 0px 1px 2px white;
+              text-shadow: 0px 1px 2px var(--card-background-color);
               font-size: 14px;
             }   
 
@@ -531,11 +531,11 @@ Here is the entire YAML blob you need to create the cards in the image above.
 
             bar-card-name {
               --font-weight: bold;             
-              color: black;
+              color: var(--primary-text-color);
               {%- if energy_raw < 15 -%}
                 color: color-mix(in srgb, #FF3333 60%, black);
               {%- endif %}                
-              text-shadow: 0px 1px 2px white;
+              text-shadow: 0px 1px 2px var(--card-background-color);
               font-size: 14px;
             }   
 
