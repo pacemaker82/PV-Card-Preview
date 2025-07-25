@@ -4,11 +4,14 @@
 
 Card YAML to show the predicted PV for the next 5 days. This card combination uses the following:
 
-- config-template-card (To enable javascript variables)
-- bar-card (To show the bar card graphics)
-- card_mod (To manipulate the CSS in the bar card)
+- config-template-card (To enable javascript variables - found in HACS)
+- bar-card (To show the bar card graphics - found in HACS)
+- card_mod (To manipulate the CSS in the bar card - found in HACS)
 - Predbat (For the PV solar prediction entities)
 
+Install Predbat here https://github.com/springfall2008/batpred
+
+Simply install all the above cards from HACS and provide the right entities from Predbat (likely defaults here work) in the code below:
 
 ```
 - type: custom:config-template-card
