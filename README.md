@@ -7,11 +7,11 @@ Card YAML to show the predicted PV for the next 5 days. This card combination us
 - config-template-card (To enable javascript variables - found in HACS)
 - bar-card (To show the bar card graphics - found in HACS)
 - card_mod (To manipulate the CSS in the bar card - found in HACS)
-- Predbat (For the PV solar prediction entities)
+- Predbat or Solcast (For the PV solar prediction entities)
 
-Install Predbat here https://github.com/springfall2008/batpred
+Install Predbat here https://github.com/springfall2008/batpred if needed
 
-Simply install all the above cards from HACS and provide the right entities from Predbat (likely defaults here work) in the code below.
+Simply install all the above cards from HACS and provide the right entities from Predbat or Solcast integration in the code below. You can use any entities here from any integration, as long as they're providing a forecast of PV in kWh.
 
 Ensure to set your PV max daily PV for each bar card. I rarely get over 35kWh so I set that as the top value "100%" for each bar-card. E.g
 
