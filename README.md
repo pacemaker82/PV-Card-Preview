@@ -68,7 +68,7 @@ card:
       height: 100px
       direction: up
       color: var(--energy-solar-color)
-      name: ${getLabel(0)}
+      name: Today
       unit_of_measurement: " "
       decimal: 2
       positions:
