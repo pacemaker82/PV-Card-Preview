@@ -4,6 +4,8 @@
 
 Card YAML to show the predicted PV for the next 5 days. The card will grow/shrink the bar relative to your maximum daily PV, and change colour (red) when the predicted PV is less than your minimum "target".
 
+Check out my blog post on [how I use this card within my dashboard](https://smarter-home.blog/2025/09/01/home-assistant-dashboard-for-solar-pv-tracking/).
+
 This visualisation uses the following cards from HACS:
 
 - config-template-card (To enable javascript variables - found in HACS)
