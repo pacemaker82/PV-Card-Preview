@@ -15,6 +15,10 @@ This visualisation uses the following cards from HACS:
 As well as:
 - Predbat or Solcast (For the PV solar prediction entities)
 
+For this card you will need to set the maximum and minimum kWh per day in helper entities. These help drive the bar height, as well as bar colour. Red indicates your PV prediction is lower than your minimum. 
+
+<img width="492" height="112" alt="Screenshot 2025-09-04 at 08 33 51" src="https://github.com/user-attachments/assets/939859a3-8f5c-42dd-a915-dd022ed08dcb" />
+
 ## Instructions
 
 [1] Install Predbat here https://github.com/springfall2008/batpred if needed
