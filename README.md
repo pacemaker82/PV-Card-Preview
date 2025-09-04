@@ -139,10 +139,7 @@ card:
           }   
 
           bar-card-name {
-            color: var(--primary-text-color);
-            {%- if energy_raw < min_pv -%}
-              color: color-mix(in srgb, #FF3333 60%, black);
-            {%- endif %}                
+            color: var(--primary-text-color);              
             text-shadow: 0px 1px 2px var(--card-background-color);
             font-size: 14px;
           }   
@@ -233,10 +230,7 @@ card:
           }   
 
           bar-card-name {
-            color: var(--primary-text-color);
-            {%- if energy_raw < min_pv -%}
-              color: color-mix(in srgb, #FF3333 60%, black);
-            {%- endif %}                
+            color: var(--primary-text-color);             
             text-shadow: 0px 1px 2px var(--card-background-color);
             font-size: 14px;
           }   
@@ -327,10 +321,7 @@ card:
           }   
 
           bar-card-name {
-            color: var(--primary-text-color);
-            {%- if energy_raw < min_pv -%}
-              color: color-mix(in srgb, #FF3333 60%, black);
-            {%- endif %}                
+            color: var(--primary-text-color);             
             text-shadow: 0px 1px 2px var(--card-background-color);
             font-size: 14px;
           }   
@@ -421,10 +412,7 @@ card:
           }   
 
           bar-card-name {
-            color: var(--primary-text-color);
-            {%- if energy_raw < min_pv -%}
-              color: color-mix(in srgb, #FF3333 60%, black);
-            {%- endif %}                
+            color: var(--primary-text-color);              
             text-shadow: 0px 1px 2px var(--card-background-color);
             font-size: 14px;
           }   
@@ -518,10 +506,7 @@ card:
           }   
 
           bar-card-name {
-            color: var(--primary-text-color);
-            {%- if energy_raw < min_pv -%}
-              color: color-mix(in srgb, #FF3333 60%, black);
-            {%- endif %}                
+            color: var(--primary-text-color);              
             text-shadow: 0px 1px 2px var(--card-background-color);
             font-size: 14px;
           }   
